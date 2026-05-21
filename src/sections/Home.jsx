@@ -6,16 +6,16 @@ import avator from "../assets/avator.png";
 import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 
 const socials = [
-   { Icon: FaXTwitter, label: "X", href: "https://x.com/gauravbuilds" },
+   { Icon: FaXTwitter, label: "X", href: "https://x.com/your-twitter" },
    {
       Icon: FaLinkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com/in/yourprofile",
+      href: "https://www.linkedin.com/in/ravirajgupta16/",
    },
    {
       Icon: FaGithub,
       label: "GitHub",
-      href: "https://github.com/gauravgupta364",
+      href: "https://github.com/Ravi-Raj-Gupta",
    },
 ];
 
@@ -108,11 +108,9 @@ export default function Home() {
                      animate={{ opacity: 1, y: 0 }}
                      transition={{ delay: 0.4, duration: 0.8 }}
                   >
-                     Skilled in building scalable, high-performance web
-                     applications using React, Next.js, Node.js, and MongoDB.
-                     Passionate about clean code, performance optimization, and
-                     creating seamless user experiences with responsive design
-                     and robust APIs.
+                     I turn complex ideas into seamless, high-impact web
+                     experiences — building modern, scalable, and lightning-fast
+                     applications that make a difference.
                   </motion.p>
 
                   <motion.div
