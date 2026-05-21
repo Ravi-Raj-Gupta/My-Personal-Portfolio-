@@ -5,17 +5,17 @@ const socials = [
    {
       icon: FaTwitter,
       label: "X",
-      href: "https://x.com/gauravbuilds",
+      href: "https://x.com/your-twitter",
    },
    {
       icon: FaLinkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com/in/gauravgupta364",
+      href: "https://www.linkedin.com/in/ravirajgupta16/",
    },
    {
       icon: FaGithub,
       label: "GitHub",
-      href: "https://github.com/gauravgupta364",
+      href: "https://github.com/Ravi-Raj-Gupta",
    },
 ];
 
@@ -53,7 +53,7 @@ export default function Footer() {
                   textShadow: "0 2px 18px rgba(0,0,0,0.45)",
                }}
             >
-               Gaurav Gupta
+               Ravi Raj Gupta
             </h1>
             <div className="h-[3px] w-24 md:w-32 rounded-full bg-gradient-to-r from-[#d058c0] via-cyan-300 to-emerald-400" />
             <div className="flex gap-5 text-2xl md:text-3xl">
@@ -78,7 +78,7 @@ export default function Footer() {
                "Success is when preparation meets opportunity."
             </p>
             <p className="text-xs text-gray-400">
-               &copy; {new Date().getFullYear()} Gaurav Gupta. All rights
+               &copy; {new Date().getFullYear()} Ravi Raj Gupta. All rights
                reserved.
             </p>
          </motion.div>
