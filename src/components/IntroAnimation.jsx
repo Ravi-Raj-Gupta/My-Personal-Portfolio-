@@ -44,7 +44,7 @@ export default function IntroAnimation({ onFinish }) {
                initial={{ y: 0 }}
                exit={{ y: "-100%" }}
                transition={{
-                  duration: 1.5,
+                  duration: 0.8,
                   ease: "easeOut",
                }}
             >

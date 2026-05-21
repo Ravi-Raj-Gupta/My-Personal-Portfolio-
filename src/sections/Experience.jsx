@@ -29,6 +29,8 @@ function ExperienceItem({ exp, idx, start, end, scrollYProgress, layout }) {
    const y = useTransform(scrollYProgress, [start, end], [50, 0]);
    const opacity = useTransform(y, [50, 40], [0, 1]);
    const scale = useTransform(opacity, [0, 1], [0.8, 1]);
+   const mobileX = useTransform(scrollYProgress, [start, end], [-30, 0]);
+   const mobileY = useTransform(scrollYProgress, [start, end], [30, 0]);
 
    if (layout === "desktop") {
       return (
@@ -69,8 +71,8 @@ function ExperienceItem({ exp, idx, start, end, scrollYProgress, layout }) {
             className="bg-gray-900/80 backdrop-blur border border-gray-700/70 rounded-xl p-5 w-full ml-6 shadow-lg"
             style={{
                opacity,
-               x: useTransform(scrollYProgress, [start, end], [-30, 0]),
-               y: useTransform(scrollYProgress, [start, end], [30, 0]),
+               x: mobileX,
+               y: mobileY,
             }}
          >
             <h3 className="text-base font-semibold break-words">{exp.role}</h3>
