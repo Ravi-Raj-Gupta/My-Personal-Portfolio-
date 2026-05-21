@@ -2,58 +2,60 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FiX } from "react-icons/fi";
 
 export default function OverlayMenu({ IsOpen, onClose }) {
-  return (
-    <AnimatePresence>
-      {IsOpen && (
-        <>
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            onClick={onClose}
-            className="fixed inset-0 bg-black/95 backdrop-blur-lg z-50"
-          />
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.9 }}
-            className="fixed inset-0 flex items-center justify-center z-50"
-          >
-            <button onClick={onClose}
-              className="absolute top-6 right-6 text-white text-3xl"
-              aria-label="Close Menu"
-            >
-              <FiX />
-            </button>
-
-            <ul className="space-y-6 text-center">
-              {[
-                "Home",
-                "About",
-                "Skills",
-                "Projects",
-                "Experience",
-                "Testimonials",
-                "Contact",
-              ].map((item, index) => (
-                <motion.li key={item}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: 20 }}
-                  transition={{ delay: 0.3 + index * 0.1 }}
-                >
-                  <a href={`#${item.toLowerCase()}`}
-                    onClick={onClose}
-                    className="text-4xl text-white font-semibold hover:text-pink-400 transition-colors duration-300"
+   return (
+      <AnimatePresence>
+         {IsOpen && (
+            <>
+               <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  onClick={onClose}
+                  className="fixed inset-0 bg-black/95 backdrop-blur-lg z-50"
+               />
+               <motion.div
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.9 }}
+                  className="fixed inset-0 flex items-center justify-center z-50"
+               >
+                  <button
+                     onClick={onClose}
+                     className="absolute top-6 right-6 text-white text-3xl"
+                     aria-label="Close Menu"
                   >
-                    {item}
-                  </a>
-                </motion.li>
-              ))}
-            </ul>
-          </motion.div>
-        </>
-      )}
-    </AnimatePresence>
-  );
+                     <FiX />
+                  </button>
+
+                  <ul className="space-y-6 text-center">
+                     {[
+                        "Home",
+                        "About",
+                        "Skills",
+                        "Projects",
+                        "Experience",
+                        "Contact",
+                     ].map((item, index) => (
+                        <motion.li
+                           key={item}
+                           initial={{ opacity: 0, y: 20 }}
+                           animate={{ opacity: 1, y: 0 }}
+                           exit={{ opacity: 0, y: 20 }}
+                           transition={{ delay: 0.3 + index * 0.1 }}
+                        >
+                           <a
+                              href={`#${item.toLowerCase()}`}
+                              onClick={onClose}
+                              className="text-4xl text-white font-semibold hover:text-pink-400 transition-colors duration-300"
+                           >
+                              {item}
+                           </a>
+                        </motion.li>
+                     ))}
+                  </ul>
+               </motion.div>
+            </>
+         )}
+      </AnimatePresence>
+   );
 }
