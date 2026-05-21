@@ -16,22 +16,19 @@ export default function App() {
 
    return (
       <>
+         <div className="relative gradient text-white">
+            <CustomCursor />
+            <ParticlesBackground />
+            <Navbar />
+            <Home />
+            <About />
+            <Skills />
+            <Projects />
+            <Experience />
+            <Contact />
+            <Footer />
+         </div>
          {!introDone && <IntroAnimation onFinish={() => setIntroDone(true)} />}
-
-         {introDone && (
-            <div className="relative gradient text-white">
-               <CustomCursor />
-               <ParticlesBackground />
-               <Navbar />
-               <Home />
-               <About />
-               <Skills />
-               <Projects />
-               <Experience />
-               <Contact />
-               <Footer />
-            </div>
-         )}
       </>
    );
 }
