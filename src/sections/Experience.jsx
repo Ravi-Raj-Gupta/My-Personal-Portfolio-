@@ -3,25 +3,10 @@ import React, { useLayoutEffect, useMemo, useRef, useState } from "react";
 
 const experiences = [
    {
-      role: "Web Developer",
-      company: "Brain Mentors",
-      duration: "2022",
-      description:
-         "Worked with team to build high-performance apps, integrated AI features, and improved engagement by 10%.",
-   },
-   {
-      role: "Web Developer Intern",
-      company: "Mobisoft Technologies",
-      duration: "2022 - 2023",
-      description:
-         "In this internship , I gained valuable hands on experience and exposure to various aspects of web development.",
-   },
-   {
-      role: "Graduate Engineer",
-      company: "HCL Technologies",
-      duration: "2024 - 2025",
-      description:
-         "Built the frontend of a GenAI-powered PV Intake Application using Next.js and TypeScript for a U.S life sciences client, enabling automated patient report processing across global regions.",
+      role: "Your Role",
+      company: "Your Company",
+      duration: "Year - Year",
+      description: "Your job description.",
    },
 ];
 
