@@ -66,17 +66,18 @@ export default function Projects() {
    const projects = useMemo(
       () => [
          {
-            title: "ClickFrame",
-            link: "https://clickframe-teal.vercel.app/",
-            bgColor: "#4b0027ff",
-            image: isMobile ? photo1 : img1,
-         },
-         {
             title: "PDFForge",
             link: "https://jpg-to-pdf-convertor.vercel.app/",
             bgColor: "#0d0065ff",
             image: isMobile ? photo2 : img2,
          },
+         {
+            title: "ClickFrame",
+            link: "https://clickframe-teal.vercel.app/",
+            bgColor: "#4b0027ff",
+            image: isMobile ? photo1 : img1,
+         },
+
          {
             title: "Edemy",
             link: "https://lms-frontend-delta-inky.vercel.app/",
