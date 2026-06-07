@@ -3,7 +3,7 @@ import React from "react";
 import profile_ravi from "../assets/profile_ravi.png";
 
 const stats = [
-  { label: "Experience", value: "1 Year+" },
+  { label: "Experience", value: "2 Internships" },
   { label: "Focus", value: "Full Stack " },
   { label: "Speciality", value: "React & Next.js" },
 ];

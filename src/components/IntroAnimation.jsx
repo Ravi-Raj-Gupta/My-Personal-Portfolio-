@@ -9,10 +9,7 @@ export default function IntroAnimation({ onFinish }) {
          "Hola",
          "Hallo",
          "Hello",
-         "Ciao",
          "Hello",
-         "Olá",
-         "Здравствуйте",
          "Merhaba",
          "Cześć",
          "नमस्ते",
@@ -27,7 +24,7 @@ export default function IntroAnimation({ onFinish }) {
 
    useEffect(() => {
       if (index < greetings.length - 1) {
-         const id = setInterval(() => setIndex((i) => i + 1), 100);
+         const id = setInterval(() => setIndex((i) => i + 1), 130);
          return () => clearInterval(id);
       } else {
          const t = setTimeout(() => setVisible(false), 300);
