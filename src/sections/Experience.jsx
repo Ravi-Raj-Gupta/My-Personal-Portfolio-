@@ -2,12 +2,20 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import React, { useLayoutEffect, useMemo, useRef, useState } from "react";
 
 const experiences = [
-   {
-      role: "Your Role",
-      company: "Your Company",
-      duration: "Year - Year",
-      description: "Your job description.",
+      {
+      role: "Web Designer",
+      company: "ARDENT COMPUTECH PVT LTD",
+      duration: "Jul 2024",
+      description: "Designed and prototyped a comprehensive Bus Booking Web application. Leveraged core frontend technologies to deliver an intuitive and user-centric interface.",
    },
+   {
+      role: "Web Developer Intern",
+      company: "ApexPlanet Software Pvt Ltd",
+      duration: "Jul 2025 - Aug 2025",
+      description: "Engineered high-performance, responsive web interfaces. Developed dynamic UI components that significantly enhanced overall user experience and site usability.",
+   },
+   
+
 ];
 
 function ExperienceItem({ exp, idx, start, end, scrollYProgress, layout }) {
@@ -26,17 +34,17 @@ function ExperienceItem({ exp, idx, start, end, scrollYProgress, layout }) {
                   style={{ scale, opacity }}
                />
                <motion.article
-                  className={`absolute bg-gray-900/80 backdrop-blur border border-gray-700/70 rounded-xl p-6 w-72 min-h-56 shadow-lg left-1/2 -translate-x-1/2 ${
-                     idx % 2 === 0
-                        ? "bottom-[calc(50%+2rem)]"
-                        : "top-[calc(50%+2rem)]"
-                  }`}
+                  className={`absolute bg-gray-900/80 backdrop-blur border border-gray-700/70 rounded-xl p-6 w-72 min-h-56 shadow-lg left-1/2 -translate-x-1/2 ${idx % 2 === 0
+                     ? "bottom-[calc(50%+2rem)]"
+                     : "top-[calc(50%+2rem)]"
+                     }`}
                   style={{ opacity, y }}
                >
                   <h3 className="text-lg font-semibold mb-1">{exp.role}</h3>
-                  <p className="text-xs text-gray-300 mb-3">
-                     {exp.company} | {exp.duration}
-                  </p>
+                  <div className="text-xs text-gray-300 mb-3">
+                     <span className="block font-medium">{exp.company}</span>
+                     <span className="block italic text-gray-400 mt-1">{exp.duration}</span>
+                  </div>
                   <p className="text-sm text-gray-300 break-words">
                      {exp.description}
                   </p>
@@ -61,9 +69,10 @@ function ExperienceItem({ exp, idx, start, end, scrollYProgress, layout }) {
             }}
          >
             <h3 className="text-base font-semibold break-words">{exp.role}</h3>
-            <p className="text-xs text-gray-400 mb-1 break-words">
-               {exp.company} | {exp.duration}
-            </p>
+            <div className="text-xs text-gray-400 mb-2 break-words">
+               <span className="block font-medium text-gray-300">{exp.company}</span>
+               <span className="block italic mt-1">{exp.duration}</span>
+            </div>
             <p className="text-xs text-gray-300 break-words">
                {exp.description}
             </p>
