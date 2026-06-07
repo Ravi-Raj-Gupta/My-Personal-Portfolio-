@@ -5,10 +5,10 @@ import {
    useMotionValueEvent,
    AnimatePresence,
 } from "framer-motion";
-import img1 from "../assets/img1.JPG";
-import img2 from "../assets/img2.JPG";
-import img3 from "../assets/img3.JPG";
-import photo1 from "../assets/photo1.JPG";
+import img1 from "../assets/img1.png";
+import img2 from "../assets/img2.png";
+import img3 from "../assets/img3.png";
+import photo1 from "../assets/photo1.png";
 import photo2 from "../assets/photo2.PNG";
 import photo3 from "../assets/photo3.png";
 
@@ -66,21 +66,21 @@ export default function Projects() {
    const projects = useMemo(
       () => [
          {
-            title: "nk studio",
-            link: "https://www.nk.studio/",
-            bgColor: "#0d4d3d",
+            title: "ClickFrame",
+            link: "https://clickframe-teal.vercel.app/",
+            bgColor: "#4b0027ff",
             image: isMobile ? photo1 : img1,
          },
          {
-            title: "Gamily",
-            link: "https://gamilyapp.com/",
-            bgColor: "#3884d3",
+            title: "PDFForge",
+            link: "https://jpg-to-pdf-convertor.vercel.app/",
+            bgColor: "#0d0065ff",
             image: isMobile ? photo2 : img2,
          },
          {
-            title: "Hungry Tiger",
-            link: "https://www.eathungrytiger.com/",
-            bgColor: "#dc9317",
+            title: "Edemy",
+            link: "https://lms-frontend-delta-inky.vercel.app/",
+            bgColor: "#1783feff",
             image: isMobile ? photo3 : img3,
          },
       ],
@@ -213,7 +213,7 @@ export default function Projects() {
                ))}
             </div>
 
-            <div className={`absolute ${isMobile ? "bottom-20" : "bottom-10"}`}>
+            <div className={`absolute z-50 ${isMobile ? "bottom-20" : "bottom-10"}`}>
                <a
                   href={activeProject?.link}
                   target="_blank"

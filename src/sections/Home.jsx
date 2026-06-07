@@ -33,7 +33,7 @@ const glowVariants = {
 
 export default function Home() {
    const roles = useMemo(
-      () => ["Full Stack Developer", "React Developer", "Node.js Developer"],
+      () => ["Full Stack Developer", "React Developer", "Node.js Developer", "Backend Developer"],
       [],
    );
    const [index, setIndex] = React.useState(0);
@@ -74,7 +74,7 @@ export default function Home() {
          </div>
 
          <div className="relative z-10 h-full w-full max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2">
-            <div className="flex flex-col justify-center h-full text-center lg:text-left relative">
+            <div className="flex flex-col justify-center h-full text-center lg:text-left relative pl-[50px]">
                <div className="w-full lg:pr-24 mx-auto max-w-[48rem]">
                   <motion.div
                      className="mb-3 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-white tracking-wide min-h-[1.6em]"

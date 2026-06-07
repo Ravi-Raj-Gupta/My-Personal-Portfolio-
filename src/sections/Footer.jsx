@@ -77,8 +77,8 @@ export default function Footer() {
             <p className="text-gray-300 italic max-w-xl">
                "Success is when preparation meets opportunity."
             </p>
-            <p className="text-xs text-gray-400">
-               &copy; {new Date().getFullYear()} Ravi Raj Gupta. All rights
+            <p className="text-sm text-gray-400">
+               &copy; {new Date().getFullYear()} Ravi Raj Gupta❤️. All rights
                reserved.
             </p>
          </motion.div>
