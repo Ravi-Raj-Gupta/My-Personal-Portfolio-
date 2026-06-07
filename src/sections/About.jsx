@@ -1,11 +1,10 @@
 import { motion } from "framer-motion";
 import React from "react";
-import p from "../assets/p.jpg";
-import boy from "../assets/boy.jpg";
+import profile_ravi from "../assets/profile_ravi.png";
 
 const stats = [
   { label: "Experience", value: "1 Year+" },
-  { label: "Focus", value: "Full Stack" },
+  { label: "Focus", value: "Full Stack " },
   { label: "Speciality", value: "React & Next.js" },
 ];
 
@@ -37,7 +36,7 @@ export default function About() {
             whileHover={{ scale: 1.02 }}
             transition={{ type: "spring", stiffness: 200, damping: 80 }}
           >
-            <img src={p} alt="profile" className="absolute inset-0" />
+            <img src={profile_ravi} alt="profile" className="absolute inset-0" />
           </motion.div>
 
           <div className="flex-1 flex flex-col justify-center text-center md:text-left">
