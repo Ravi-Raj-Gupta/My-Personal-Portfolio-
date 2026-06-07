@@ -1,6 +1,6 @@
 import { motion, useMotionValue } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
-import { FaJava, FaPython, FaReact, FaHtml5 } from "react-icons/fa6";
+import { FaJava, FaPython, FaReact, FaHtml5, FaC, FaCss } from "react-icons/fa6";
 import {
   SiNextdotjs,
   SiTypescript,
@@ -10,25 +10,35 @@ import {
   SiMongodb,
   SiAngular,
   SiCplusplus,
+  SiNetlify,
+  SiShadcnui,
 } from "react-icons/si";
-import { DiNodejsSmall, DiJavascript1, DiPython } from "react-icons/di";
+import { DiNodejsSmall, DiJavascript1, DiPython, DiMysql, DiPostgresql } from "react-icons/di";
+import { CgVercel } from "react-icons/cg";
 
 export default function Skills() {
   const skills = [
-    { icon: <FaJava />, name: "Java" },
+    { icon: <FaC />, name: "C" },
+    { icon: <FaHtml5 />, name: "HTML" },
+    { icon: <FaCss />, name : "CSS"},
     { icon: <SiCplusplus />, name: "C++" },
-    { icon: <FaHtml5 />, name: "HTML/CSS" },
     { icon: <DiJavascript1 />, name: "JavaScript" },
     { icon: <FaReact />, name: "React" },
-    { icon: <SiNextdotjs />, name: "Next.js" },
+    { icon: <FaJava />, name: "Java" },
+    { icon : <DiPostgresql />, name : "PostgresSQL"},
     { icon: <SiTypescript />, name: "TypeScript" },
     { icon: <SiTailwindcss />, name: "Tailwind CSS" },
+    { icon : <CgVercel />, name : "Vercel"},
     { icon: <SiFastapi />, name: "FastAPI" },
     { icon: <DiNodejsSmall />, name: "Node.js" },
     { icon: <SiDocker />, name: "Docker" },
+    { icon : <SiShadcnui />, name : "ShadCN UI"},
+    { icon :< DiMysql />,  name : "MySQL"},
     { icon: <SiMongodb />, name: "MongoDB" },
+    { icon: <SiNextdotjs />, name: "Next.js" },
     { icon: <DiPython />, name: "Python" },
     { icon: <SiAngular />, name: "Angular" },
+    {icon : <SiNetlify />, name : "Netlify"},
   ];
 
   const repeated = [...skills, ...skills];
@@ -87,12 +97,12 @@ export default function Skills() {
       last = now;
       let next = x.get() + SPEED * dir * dt;
       const loop = trackRef.current?.scrollWidth / 2 || 0;
-      
+
       if (loop) {
         if (next <= -loop) next += loop;
         if (next >= 0) next -= loop;
       }
-      
+
       x.set(next);
       id = requestAnimationFrame(tick);
     };
