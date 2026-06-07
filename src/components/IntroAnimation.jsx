@@ -7,7 +7,7 @@ export default function IntroAnimation({ onFinish }) {
          "Hello",
          "नमस्ते",
          "Hola",
-         "Bonjour",
+         "Hello",
          "Ciao",
          "Olá",
          "Здравствуйте",
@@ -15,7 +15,6 @@ export default function IntroAnimation({ onFinish }) {
          "Cześć",
          "Hej",
          "Hallo",
-         "Salam",
       ],
       [],
    );
