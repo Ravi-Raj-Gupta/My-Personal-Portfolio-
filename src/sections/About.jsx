@@ -23,7 +23,7 @@ export default function About() {
         ))}
       </div>
 
-      <div className="relative z-10 max-w-6xl w-full mx-auto px-6 md:px-10 lg:px-12 py-20 flex flex-col gap-12">
+      <div className="relative z-10 max-w-6xl w-full mx-auto px-6 md:px-10 lg:px-12 py-12 sm:py-20 flex flex-col gap-12">
         <motion.div
           className="flex flex-col md:flex-row items-center md:items-stretch gap-8"
           initial={{ opacity: 0, y: 24 }}
@@ -40,13 +40,13 @@ export default function About() {
           </motion.div>
 
           <div className="flex-1 flex flex-col justify-center text-center md:text-left">
-            <h2 className="text-4xl sm:text-5xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-[#1cd8d2] via-[#00bf8f] to-[#1cd8d2]">
+            <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-[#1cd8d2] via-[#00bf8f] to-[#1cd8d2]">
               Ravi Raj Gupta
             </h2>
-            <p className="mt-2 text-lg sm:text-xl text-white/90 font-semibold">
+            <p className="mt-2 text-base sm:text-xl text-white/90 font-semibold">
               Full Stack Developer
             </p>
-            <p className="mt-4 text-gray-300 leading-relaxed text-base sm:text-lg max-w-2xl md:max-w-3xl">
+            <p className="mt-4 text-gray-300 leading-relaxed text-sm sm:text-lg max-w-2xl md:max-w-3xl text-justify">
               I build scalable, modern applications with a strong focus on clean architecture, delightful UX, and performance. My toolkit spans Java, React, Next.js, TypeScript, Tailwind CSS, and RestfulAPI— bringing ideas to life from concept to production with robust APIs and smooth interfaces.
             </p>
 

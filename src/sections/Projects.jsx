@@ -106,8 +106,8 @@ export default function Projects() {
 
    if (isMobile) {
       return (
-         <section id="projects" className="bg-black text-white">
-            <h2 className="text-3xl font-semibold text-center pt-16">
+         <section id="projects" className="bg-black text-white pt-[10px]">
+            <h2 className="text-3xl font-semibold text-center">
                My Work
             </h2>
             <div className="mt-8">

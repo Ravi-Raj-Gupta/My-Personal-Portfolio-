@@ -45,7 +45,7 @@ function ExperienceItem({ exp, idx, start, end, scrollYProgress, layout }) {
                      <span className="block font-medium">{exp.company}</span>
                      <span className="block italic text-gray-400 mt-1">{exp.duration}</span>
                   </div>
-                  <p className="text-sm text-gray-300 break-words">
+                  <p className="text-sm sm:text-base text-gray-300 break-words text-justify">
                      {exp.description}
                   </p>
                </motion.article>
@@ -73,7 +73,7 @@ function ExperienceItem({ exp, idx, start, end, scrollYProgress, layout }) {
                <span className="block font-medium text-gray-300">{exp.company}</span>
                <span className="block italic mt-1">{exp.duration}</span>
             </div>
-            <p className="text-xs text-gray-300 break-words">
+            <p className="text-sm text-gray-300 break-words text-justify">
                {exp.description}
             </p>
          </motion.article>
