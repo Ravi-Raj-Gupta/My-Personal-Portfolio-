@@ -74,10 +74,10 @@ export default function Home() {
          </div>
 
          <div className="relative z-10 h-full w-full max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2">
-            <div className="flex flex-col justify-center h-full text-center lg:text-left relative lg:pl-[50px]">
+            <div className="flex flex-col justify-center h-full text-center lg:text-left relative pl-[50px]">
                <div className="w-full lg:pr-24 mx-auto max-w-[48rem]">
                   <motion.div
-                     className="mb-3 text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-white tracking-wide min-h-[1.6em]"
+                     className="mb-3 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-white tracking-wide min-h-[1.6em]"
                      initial={{ opacity: 0, y: 12 }}
                      animate={{ opacity: 1, y: 0 }}
                      transition={{ duration: 0.6, delay: 0.3 }}
@@ -97,13 +97,13 @@ export default function Home() {
                   >
                      Hello, I'm
                      <br />
-                     <span className="text-white font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
+                     <span className="text-white font-bold text-5xl sm:text-5xl md:text-6xl lg:text-7xl whitespace-nowrap">
                         Ravi Raj Gupta
                      </span>
                   </motion.h1>
 
                   <motion.p
-                     className="mt-5 text-sm sm:text-base md:text-lg text-gray-300 max-w-2xl mx-auto lg:mx-0 text-justify"
+                     className="mt-5 text-sm sm:text-base md:text-lg text-gray-300 max-w-2xl mx-auto lg:mx-0"
                      initial={{ opacity: 0, y: 15 }}
                      animate={{ opacity: 1, y: 0 }}
                      transition={{ delay: 0.4, duration: 0.8 }}

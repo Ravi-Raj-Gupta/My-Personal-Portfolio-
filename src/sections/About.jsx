@@ -46,7 +46,7 @@ export default function About() {
             <p className="mt-2 text-base sm:text-xl text-white/90 font-semibold">
               Full Stack Developer
             </p>
-            <p className="mt-4 text-gray-300 leading-relaxed text-sm sm:text-lg max-w-2xl md:max-w-3xl text-justify">
+            <p className="mt-4 text-gray-300 leading-relaxed text-sm sm:text-lg max-w-2xl md:max-w-3xl">
               I build scalable, modern applications with a strong focus on clean architecture, delightful UX, and performance. My toolkit spans Java, React, Next.js, TypeScript, Tailwind CSS, and RestfulAPI— bringing ideas to life from concept to production with robust APIs and smooth interfaces.
             </p>
 

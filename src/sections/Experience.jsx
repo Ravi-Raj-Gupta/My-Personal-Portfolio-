@@ -45,7 +45,7 @@ function ExperienceItem({ exp, idx, start, end, scrollYProgress, layout }) {
                      <span className="block font-medium">{exp.company}</span>
                      <span className="block italic text-gray-400 mt-1">{exp.duration}</span>
                   </div>
-                  <p className="text-sm sm:text-base text-gray-300 break-words text-justify">
+                  <p className="text-sm sm:text-base text-gray-300 break-words">
                      {exp.description}
                   </p>
                </motion.article>
@@ -73,7 +73,7 @@ function ExperienceItem({ exp, idx, start, end, scrollYProgress, layout }) {
                <span className="block font-medium text-gray-300">{exp.company}</span>
                <span className="block italic mt-1">{exp.duration}</span>
             </div>
-            <p className="text-sm text-gray-300 break-words text-justify">
+            <p className="text-sm text-gray-300 break-words">
                {exp.description}
             </p>
          </motion.article>
@@ -105,7 +105,7 @@ export default function Experience() {
       () => experiences.map((_, i) => (i + 1) / experiences.length),
       [experiences.length],
    );
-   const lineSize = useTransform(scrollYProgress, (v) => `${v * 100}%`);
+   const lineSize = useTransform(scrollYProgress, [0, 0.85], ["0%", "100%"], { clamp: true });
 
    return (
       <section id="experience" className="relative bg-black text-white">
