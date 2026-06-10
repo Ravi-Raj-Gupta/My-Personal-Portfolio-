@@ -105,7 +105,7 @@ export default function Experience() {
       () => experiences.map((_, i) => (i + 1) / experiences.length),
       [experiences.length],
    );
-   const lineSize = useTransform(scrollYProgress, [0, 0.85], ["0%", "100%"], { clamp: true });
+   const lineProgress = useTransform(scrollYProgress, [0, 0.85], [0, 1], { clamp: true });
 
    return (
       <section id="experience" className="relative bg-black text-white">
@@ -125,7 +125,7 @@ export default function Experience() {
                         <div className="absolute left-0 top-0 bottom-0 w-[6px] bg-white/15 rounded" />
                         <motion.div
                            className="absolute left-0 top-0 bottom-0 w-[6px] bg-white rounded origin-top"
-                           style={{ height: lineSize }}
+                           style={{ scaleY: lineProgress }}
                         />
                         <div className="relative flex flex-col gap-16 ml-10 mt-6 pb-28">
                            {experiences.map((exp, idx) => (
@@ -146,7 +146,7 @@ export default function Experience() {
                         <div className="absolute top-1/2 -translate-y-1/2 left-0 right-0 h-[6px] bg-white/15 rounded" />
                         <motion.div
                            className="absolute top-1/2 -translate-y-1/2 left-0 right-0 h-[6px] bg-white rounded origin-left"
-                           style={{ width: lineSize }}
+                           style={{ scaleX: lineProgress }}
                         />
                         <div className="relative flex justify-between">
                            {experiences.map((exp, idx) => (

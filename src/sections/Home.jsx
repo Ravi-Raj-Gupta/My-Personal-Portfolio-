@@ -74,7 +74,7 @@ export default function Home() {
          </div>
 
          <div className="relative z-10 h-full w-full max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2">
-            <div className="flex flex-col justify-center h-full text-center lg:text-left relative pl-[50px]">
+            <div className="flex flex-col justify-center h-full text-center lg:text-left relative lg:pl-[50px]">
                <div className="w-full lg:pr-24 mx-auto max-w-[48rem]">
                   <motion.div
                      className="mb-3 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-white tracking-wide min-h-[1.6em]"
@@ -97,7 +97,7 @@ export default function Home() {
                   >
                      Hello, I'm
                      <br />
-                     <span className="text-white font-bold text-5xl sm:text-5xl md:text-6xl lg:text-7xl whitespace-nowrap">
+                     <span className="text-white font-bold text-5xl sm:text-5xl md:text-6xl lg:text-7xl lg:whitespace-nowrap">
                         Ravi Raj Gupta
                      </span>
                   </motion.h1>
