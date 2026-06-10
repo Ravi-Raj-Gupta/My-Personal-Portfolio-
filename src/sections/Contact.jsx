@@ -15,7 +15,6 @@ export default function Contact() {
          return;
       }
       emailjs.init(PUBLIC_KEY);
-      console.log("EmailJS initialized with public key");
    }, []);
 
    const [formData, setFormData] = useState({
