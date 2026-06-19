@@ -115,7 +115,7 @@ export default function Experience() {
             className="relative"
          >
             <div className="sticky top-0 h-screen flex flex-col">
-               <h2 className="text-4xl sm:text-5xl font-semibold mt-20 text-center">
+               <h2 className="text-4xl sm:text-5xl font-semibold mt-12 text-center">
                   Experience
                </h2>
 
