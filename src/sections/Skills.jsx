@@ -115,7 +115,7 @@ export default function Skills() {
     <section
       id="skills"
       ref={sectionRef}
-      className="w-full pt-[10px] pb-4 flex flex-col items-center justify-center relative bg-black text-white overflow-hidden"
+      className="w-full pt-20 pb-20 flex flex-col items-center justify-center relative bg-black text-white overflow-hidden"
     >
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/4 left-0 w-[300px] h-[300px] rounded-full bg-gradient-to-r from-[#302b63] via-[#00bf8f] to-[#1cd8d2] opacity-20 blur-[120px] animate-pulse" />

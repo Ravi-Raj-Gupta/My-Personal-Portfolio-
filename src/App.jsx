@@ -16,7 +16,7 @@ export default function App() {
    const [introDone, setIntroDone] = React.useState(false);
 
    return (
-      <ReactLenis root>
+      <ReactLenis root options={{ smooth: true, duration: 2, lerp: 0.07, wheelMultiplier: 1 }}>
          <div className="relative gradient text-white">
             <CustomCursor />
             <ParticlesBackground />
