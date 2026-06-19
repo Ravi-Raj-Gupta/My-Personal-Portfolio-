@@ -1,16 +1,104 @@
-# React + Vite
+# Portfolio Website - Ravi
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, highly interactive, and visually stunning personal portfolio website built to showcase skills, projects, and professional experience. The project is designed with a focus on fluid animations, modern aesthetic, and a smooth user experience.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Modern & Responsive Design:** Fully responsive layout with TailwindCSS, working seamlessly across desktop, tablet, and mobile.
+- **Fluid Animations:** Smooth section transitions and interactive elements powered by Framer Motion.
+- **Dynamic Backgrounds:** Engaging visual effects including a particles background.
+- **Custom Cursor:** Enhanced user interaction with a custom-designed cursor.
+- **Working Contact Form:** Integrated with EmailJS to send messages directly from the website.
+- **Component-Driven:** Clean, modular, and maintainable codebase structure using React.
 
-## React Compiler
+## 🛠️ Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Framework:** [React 19](https://react.dev/)
+- **Build Tool:** [Vite](https://vitejs.dev/)
+- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
+- **Animations:** [Framer Motion](https://www.framer.com/motion/)
+- **Icons:** [React Icons](https://react-icons.github.io/react-icons/)
+- **Routing:** [React Router DOM](https://reactrouter.com/)
+- **Email Service:** [EmailJS](https://www.emailjs.com/)
 
-## Expanding the ESLint configuration
+## 📂 Folder Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The project is thoughtfully structured to separate concerns and maintain scalability:
+
+```text
+PORTFOLIO RAVI/
+├── public/                 # Static assets (images, fonts, etc.)
+├── src/                    # Source code
+│   ├── assets/             # Project-specific assets (e.g., resume, images)
+│   ├── components/         # Reusable UI components
+│   │   ├── CustomCursor.jsx       # Custom animated cursor
+│   │   ├── IntroAnimation.jsx     # Initial loading/intro animation
+│   │   ├── Navbar.jsx             # Top navigation bar
+│   │   ├── OverlayMenu.jsx        # Full-screen mobile menu
+│   │   └── ParticlesBackground.jsx# Interactive particle background
+│   ├── sections/           # Major page sections
+│   │   ├── Home.jsx               # Hero section
+│   │   ├── About.jsx              # About me details
+│   │   ├── Skills.jsx             # Technical skills and proficiencies
+│   │   ├── Experience.jsx         # Professional experience timeline
+│   │   ├── Projects.jsx           # Portfolio projects gallery
+│   │   ├── Contact.jsx            # Contact form with EmailJS integration
+│   │   ├── Testimonials.jsx       # Client/Colleague testimonials
+│   │   └── Footer.jsx             # Site footer
+│   ├── App.jsx             # Root component assembling sections
+│   ├── main.jsx            # Application entry point
+│   └── index.css           # Global styles and Tailwind imports
+├── .env                    # Environment variables (EmailJS keys)
+├── package.json            # Project dependencies and scripts
+└── vite.config.js          # Vite configuration
+```
+
+## 🚀 How to Run Locally
+
+Follow these steps to get the project up and running on your local machine:
+
+### Prerequisites
+
+- Node.js (v18 or higher recommended)
+- npm or yarn
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone <your-repo-url>
+   cd PORTFOLIO RAVI
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Environment Setup:**
+   Create a `.env` file in the root directory and add your EmailJS configuration:
+   ```env
+   VITE_EMAILJS_SERVICE_ID=your_service_id
+   VITE_EMAILJS_TEMPLATE_ID=your_template_id
+   VITE_EMAILJS_PUBLIC_KEY=your_public_key
+   ```
+
+4. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+
+5. **Open in Browser:**
+   Navigate to `http://localhost:5173` in your web browser.
+
+## 🏗️ Build for Production
+
+To create a production-ready build, run:
+```bash
+npm run build
+```
+This will generate an optimized build in the `dist/` folder, ready for deployment.
+
+---
+
+*Designed and developed by Ravi.*

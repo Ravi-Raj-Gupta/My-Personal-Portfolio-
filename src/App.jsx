@@ -10,12 +10,13 @@ import Home from "./sections/Home";
 import Projects from "./sections/Projects";
 import Skills from "./sections/Skills";
 import IntroAnimation from "./components/IntroAnimation";
+import { ReactLenis } from "lenis/react";
 
 export default function App() {
    const [introDone, setIntroDone] = React.useState(false);
 
    return (
-      <>
+      <ReactLenis root>
          <div className="relative gradient text-white">
             <CustomCursor />
             <ParticlesBackground />
@@ -29,6 +30,6 @@ export default function App() {
             <Footer />
          </div>
          {!introDone && <IntroAnimation onFinish={() => setIntroDone(true)} />}
-      </>
+      </ReactLenis>
    );
 }
