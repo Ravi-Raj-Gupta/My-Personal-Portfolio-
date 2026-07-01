@@ -1,4 +1,4 @@
-# Portfolio Website - Ravi
+# Portfolio Website - Ravi Raj Gupta 
 
 A modern, highly interactive, and visually stunning personal portfolio website built to showcase skills, projects, and professional experience. The project is designed with a focus on fluid animations, modern aesthetic, and a smooth user experience.
 
